@@ -130,3 +130,18 @@ form .google-sign-btn button:hover {
     padding: 20px 0;
     text-align: center;
 }
+
+/* media query on the popup form box  */
+@media (max-width: 888px) {
+    .form-popup {
+        
+        max-width: 550px;
+    }
+    
+    .form-box .form-details {
+        display: none;
+    }
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}
