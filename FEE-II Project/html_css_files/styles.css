@@ -126,6 +126,22 @@ header.hero .overlay {
     z-index: 1;
 }
 
+.about{
+    width: 550px;
+    height: 330px;
+    margin: 20px;
+    
+}
+
+section.about h1{
+    font-size:xxx-large;
+}
+section.about p{
+    line-height: 2;
+}
+section.about {
+    background-size: contain;
+}
 header.hero h1 {
     color: #fff;
     font-size: 3em;
