@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif, cursive;
-}
+
 
 /* login button  */
 .login-btn {
@@ -25,7 +20,7 @@
 /* popup form box  */
 .form-popup {
     position: fixed;
-    top: 82%;
+    top: 55%;
     left: 50%;
     width: 70vw;
     pointer-events: none;
