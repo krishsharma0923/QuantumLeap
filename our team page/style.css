@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-header{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-image: url("./our-team-images/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    /* margin-top: 100px; */
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* our-team section  */
+.our-team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.937);
+    color: #fff;
+    padding: 5% 5%;
+}
+
+    /* team-members section  */
+.our-team .team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+    /* member card section  */
+.team-members .member-card img {
+    border-radius: 100%;
+    max-width: 200px;
+}
+
+.team-members .member-card {
+    padding: 1rem 2.5rem;
+    background-color: #e3e3e3e1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.member-card h2 {
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0.6rem;
+}
+
+.member-card h5 {
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.member-card:nth-child(3) {
+    left: 50%;
+}
+
+.member-card .social {
+    margin: 15px;
+    text-align: center;
+}
+.social a i {
+    font-size: 18px;
+    color: #252525;
+    padding: 0 3px;
+    transition: 0.5s;
+}
+.social a i:hover {
+    transform: scale(1.3);
+}
+.member-card:hover {
+    z-index: 999;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+.our-team .content {
+    max-width: 700px;
+    padding: 0 0 0 5%;
+}
+
+.our-team .content h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1.3rem;
+}
+.our-team .content p {
+    font-size: 18px;
+    margin-bottom: 1.2rem;
+}
+.our-team .content .contact-btn {
+    padding: 1rem 2.5rem;
+    background-color: #0054fd;
+    color: #fff;
+    margin: 1.5rem 0;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2.5rem;
+}
+.our-team .content .contact-btn:hover {
+    background-color: #0237a0;
+    
+}
