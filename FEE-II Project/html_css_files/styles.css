@@ -1,4 +1,14 @@
 /* General Styles */
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family: 'Orbitron';
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,7 +18,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent blue */
+    /* background-color: rgba(0, 0, 0, 0.8); Semi-transparent blue */
     padding: 20px;
     position: absolute;
     width: 100%;
@@ -48,7 +58,7 @@ nav {
     font-weight: bold;
     font-size: 20px;
     transition: color 0.3s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .navbar a:hover {
@@ -81,7 +91,7 @@ nav {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 8px 12px;
 }
 
@@ -146,14 +156,14 @@ header.hero h1 {
     color: #fff;
     font-size: 3em;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 header.hero p {
     color: #ddd;
     font-size: 2em;
     margin: 10px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 /* Features Section */
@@ -201,5 +211,5 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
