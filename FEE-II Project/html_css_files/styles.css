@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     color: #ffffff;
     background-color: #000000;
 }
@@ -41,28 +41,36 @@ nav {
     margin: 0 40px; /* Reduced margin to accommodate logo and links */
 }
 
-.navbar .logo img {
-    height: 50px; /* Adjust height to fit within the navbar */
-    width: auto;  /* Maintain aspect ratio */
-    margin-right: 70vh; /* Space between logo and navigation links */
+/* .navbar .logo img {
+    height: 50px; 
+    width: auto;  
+    margin-right: 70vh; 
     margin-left: 0px;
     align-items: flex-start;
 }
 .navbar .logo img:hover{
     cursor: pointer;
+} */
+
+
+.logo{
+    padding: 20px 600px 0px 200px;
+    font-weight:900;
 }
+
 
 .navbar a {
     color: #ffffff; /* Black text color */
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 20px;
     transition: color 0.3s;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding-top: 20px;
 }
 
 .navbar a:hover {
-    color: #ffd700; /* Gold color on hover */
+    color: #666; /* Gold color on hover */
 }
 /* Dropdown Menu */
 .navbar .dropdown {
