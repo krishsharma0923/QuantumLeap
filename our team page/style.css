@@ -129,3 +129,30 @@
     background-color: #0237a0;
     
 }
+
+/* media querry to change display flex our-team section  */
+@media(max-width: 1000px) {
+    .our-team {
+        flex-direction: column;
+    }
+    .our-team .content {
+        text-align: center;
+        padding: 0;
+        /* margin-right: 2.5rem; */
+    }
+    .content h1 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* media querry to change grid template to 1fr  */
+@media(max-width: 640px) {
+    .our-team .team-members {
+        padding-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .member-card:nth-child(3) {
+        left: 0;
+    }
+}
