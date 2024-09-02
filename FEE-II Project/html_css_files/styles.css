@@ -221,3 +221,10 @@ footer {
     margin-top: 50px;
     /* font-family: Arial, sans-serif; */
 }
+
+
+.hero{
+    background-image: url(/FEE-II\ Project/imags/bgimage.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
