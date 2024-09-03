@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, cursive;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overscroll-behavior: none;
+}
+header {
+    /* position: fixed; */
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 10px;
+    /* z-index: 1000; */
+    /* background-color: rgb(44, 44, 44); */
+}
+.navbar {
+    display: flex;
+    padding: 22px 0;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar .menu-btn {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.navbar .logo h2 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.navbar .links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+
+
+.navbar .links .dropdown {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+.navbar .links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.navbar .links .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+}
+.navbar .links .dropdown-content a:hover {
+    background-color: #575757;
+}
+.navbar .links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .links .active-btn a {
+    color: #9f9f9f;
+}
+
+.navbar .links .close-btn {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+}
+.navbar .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.navbar .links a:hover {
+    color: #9f9f9f;
+}
+.navbar .login-btn {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #009970;
+}
+.navbar .login-btn:hover {
+    background-color: #00b383;
+}
+
+
+
+
+@media (max-width: 900px){
+    .navbar :is(.menu-btn, .links .close-btn) {
+        display: block;
+    }
+    .navbar {
+        padding: 15px 0;
+        margin: 0 2%;
+    }
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+    .navbar .links {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 40%;
+        height: 100vh;
+        z-index: 999;
+        display: block;
+        padding: 60px;
+        text-align: left;
+        background-color: rgb(44, 44, 44);
+        transition: 0.2s ease;
+    }
+    .navbar .links.show-menu {
+        left: 0;
+    }
+    .navbar .links a {
+        color: #fff;
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+    }
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+
+
+.sub-header{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-image: url("./our-team-images/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    /* margin-top: 100px; */
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* our-team section  */
+.our-team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.937);
+    color: #fff;
+    padding: 5% 5%;
+}
+
+    /* team-members section  */
+.our-team .team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+    /* member card section  */
+.team-members .member-card img {
+    border-radius: 100%;
+    max-width: 200px;
+}
+
+.team-members .member-card {
+    padding: 1rem 2.5rem;
+    background-color: #e3e3e3e1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.member-card h2 {
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0.6rem;
+}
+
+.member-card h5 {
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.member-card:nth-child(3) {
+    left: 50%;
+}
+
+.member-card .social {
+    margin: 15px;
+    text-align: center;
+}
+.social a i {
+    font-size: 18px;
+    color: #252525;
+    padding: 0 3px;
+    transition: 0.5s;
+}
+.social a i:hover {
+    transform: scale(1.3);
+}
+.member-card:hover {
+    z-index: 950;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+.our-team .content {
+    max-width: 700px;
+    padding: 0 0 0 5%;
+}
+
+.our-team .content h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1.3rem;
+}
+.our-team .content p {
+    font-size: 18px;
+    margin-bottom: 1.2rem;
+}
+.our-team .content .contact-btn {
+    padding: 1rem 2.5rem;
+    background-color: #0054fd;
+    color: #fff;
+    margin: 1.5rem 0;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2.5rem;
+}
+.our-team .content .contact-btn:hover {
+    cursor: pointer;
+    background-color: #0237a0;
+    
+}
+
+/* media querry to change display flex our-team section  */
+@media(max-width: 1000px) {
+    .our-team {
+        flex-direction: column;
+    }
+    .our-team .content {
+        text-align: center;
+        padding: 0;
+        /* margin-right: 2.5rem; */
+    }
+    .content h1 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* media querry to change grid template to 1fr  */
+@media(max-width: 640px) {
+    .our-team .team-members {
+        padding-top: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .member-card:nth-child(3) {
+        left: 0;
+    }
+}
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: xx-large;
+    
+}
+footer h4{
+    color: #fff;
+    font-size: medium;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-weight: 600; 
+    
+}
+footer p {
+    font-size: small;
+    color: #fff;
+    padding: 0 10px 0 10px;
+}
