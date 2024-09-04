@@ -29,6 +29,8 @@ header {
     /* z-index: 1000; */
     /* background-color: rgb(44, 44, 44); */
 }
+
+/* navbar section  */
 .navbar {
     display: flex;
     padding: 22px 0;
@@ -119,7 +121,7 @@ header {
 
 
 
-
+/* navbar media query */
 @media (max-width: 900px){
     .navbar :is(.menu-btn, .links .close-btn) {
         display: block;
@@ -158,8 +160,10 @@ header {
         padding: 7px 10px;
     }
 }
+/* end  */
 
 
+/* home landing page  */
 .home-landing .landing .main-content {
     display: flex;
     column-gap: 30px;
@@ -203,11 +207,13 @@ header {
     backdrop-filter: blur(10px);
 }
 .button-style:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: #fff;
     color: black;
 }
 
+
+/* home landing page media query */
 @media (max-width: 752px) {
     .home-landing .landing .main-content .astro-img {
         display: none;
@@ -231,7 +237,12 @@ header {
         margin-top: -1.5%;
     }
 } 
+/* end  */
 
+
+
+
+/* get to know section  */
 .get-to-know .get-to-know-content {
     display: flex;
     /* flex-wrap: wrap; */
@@ -258,6 +269,8 @@ header {
 .get-to-know .get-to-know-content .get-to-know-img img {
     width: 40vw;
 }
+
+/* get know more media query */
 @media (max-width: 1000px) {
     .get-to-know .get-to-know-content {
         flex-direction: column;
@@ -280,7 +293,10 @@ header {
         font-size: 1.2rem;
     }
 }
+/* end  */
 
+
+/* solar planets section  */
 .solar-text {
     text-align: center;
     margin: 1rem;
@@ -319,14 +335,19 @@ header {
 .solar-planet-container .solar-planets-cards .solar-planet-member p {
     margin: 1rem;
 }
+/* end  */
 
+
+/* features section  */
+.features .feature-text {
+    text-align: center;
+}
 
 section.features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px 20px;
-    background-color: #000000; /* Matching the body background color */
 }
 
 
@@ -357,6 +378,7 @@ section.features .feature p {
     font-size: 1.1em;
     color: #ddd;
 }
+/* end  */
 
 
 /* footer */
@@ -380,4 +402,4 @@ footer p {
     color: #fff;
     padding: 0 10px 0 10px;
 }
-
+/* end  */
