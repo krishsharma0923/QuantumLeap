@@ -183,6 +183,7 @@ header {
     font-size: 1.5rem;
 }
 .button-style {
+    cursor: pointer;
     background-color: transparent;
     border: 3px solid #fff;
     border-radius: 50px;
