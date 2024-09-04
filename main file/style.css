@@ -312,6 +312,9 @@ header {
     margin: 1rem;
 }
 
+.features .feature-text {
+    text-align: center;
+}
 
 section.features {
     display: flex;
