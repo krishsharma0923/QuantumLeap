@@ -8,9 +8,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="/FEE-II Project/imags/tablogo.png" type="image/x-icon">
+    <!-- <link rel="icon" href="/FEE-II Project/imags/tablogo.png" type="image/x-icon"> -->
   </head>
   <body>
     <!-- navbar section  -->
@@ -22,28 +22,179 @@
         >
         <ul class="links">
           <span class="close-btn material-symbols-outlined"> close </span>
-          <li class="active-btn"><a href="#">Home</a></li>
-          <li><a href="#">Blog & News</a></li>
+          <li class="active-btn"><a href="./index.html">Home</a></li>
+          <li><a href="./blogs&News.html">Blog & News</a></li>
           <li class="dropdown">
             <a href="#" class="pages">Pages</a>
             <ul class="dropdown-content">
-              <li><a href="./missions/practice.html">Mission</a></li>
+              <li><a href="mission.html">Mission</a></li>
               <li><a href="./ourTeams.html">Our Team</a></li>
             </ul>
           </li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button class="login-btn"><a href="./login-signin.html" style="text-decoration: none; color: #fff;">Login</a></button>
+        <button class="login-btn">Login</button>
       </nav>
     </header>
     <!-- end  -->
 
+    <!-- popup form  -->
+    <!-- blur background for popup form  -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-outlined"> close </span>
+      <!-- for sign-in  -->
+      <div class="form-box signin">
+        <!-- left-box  -->
+        <div class="form-details">
+          <img
+            src="./modal-section-images/loginimg.png"
+            style="max-width: 35vw; height: 100%"
+          />
+        </div>
+
+        <!-- right-box  -->
+        <!-- content of login page  -->
+        <div class="form-content">
+          <div class="form-header">
+            <h2>Welcome Back</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              dolorem.
+            </p>
+          </div>
+          <form action="#">
+            <div class="input-field">
+              <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+              <!-- <label for="email">Email</label> -->
+            </div>
+            <div class="input-field">
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <!-- <label for="password">Password</label> -->
+            </div>
+            <div class="form-link">
+              <div class="form-check">
+                <input type="checkbox" id="formCheck" />
+                <label for="formCheck" style="color: rgb(98, 98, 98)"
+                  ><small>Remember me</small></label
+                >
+              </div>
+              <div class="forgot">
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-in">
+              <button type="submit">Log In</button>
+            </div>
+            <div class="google-sign-btn">
+              <button type="submit">
+                <img
+                  src="./modal-section-images/google.png"
+                  style="width: 20px; align-self: center"
+                /><small> Sign in with Google</small>
+              </button>
+            </div>
+          </form>
+          <div class="bottom-link">
+            <small
+              >Don't have an account?
+              <a href="#" id="signup-link">Sign Up</a></small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- for sign-up  -->
+      <div class="form-box signup">
+        <!-- left-box  -->
+        <div class="form-details">
+          <img
+            src="./modal-section-images/loginimg.png"
+            style="max-width: 35vw; height: 100%"
+          />
+        </div>
+
+        <!-- right-box  -->
+        <!-- content of sign-up page -->
+        <div class="form-content">
+          <div class="form-header">
+            <h2>Create Account</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+              dolorem.
+            </p>
+          </div>
+          <form action="#">
+            <div class="input-field">
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Email Address"
+                required
+              />
+              <!-- <label for="email">Email</label> -->
+            </div>
+            <div class="input-field">
+              <input
+                id="password"
+                type="password"
+                placeholder="Create Password"
+                required
+              />
+              <!-- <label for="password">Password</label> -->
+            </div>
+            <div class="input-field">
+              <input
+                id="password"
+                type="password"
+                placeholder="Confirm Password"
+                required
+              />
+              <!-- <label for="password">Password</label> -->
+            </div>
+            <div class="form-link">
+              <div class="form-check">
+                <input type="checkbox" id="policy" />
+                <label for="policy" style="color: rgb(98, 98, 98)"
+                  ><small
+                    >I agree the<a href="#">Terms & Conditions</a></small
+                  ></label
+                >
+              </div>
+            </div>
+            <div class="login-in sign-up">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+          <div class="bottom-link">
+            <small
+              >Already have an account?
+              <a href="#" id="login-link">Sign In</a></small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end  -->
 
     <!-- home-landing section  -->
     <section class="home-landing">
       <div class="landing">
-        <img src="./home-page-images/Photos-images-space-wallpaper-HD.jpg" alt="" />
+        <img
+          src="./home-page-images/Photos-images-space-wallpaper-HD.jpg"
+          alt=""
+        />
         <div class="main-content">
           <div class="landing-text">
             <h1>Welcome to QuantumLeap</h1>
@@ -54,7 +205,11 @@
             <button class="button-style join-us">Join With Us</button>
           </div>
           <div class="astro-img">
-            <img src="./home-page-images/slide-img.png" style="width: 30vw" />
+            <img
+              class="astro"
+              src="./home-page-images/slide-img.png"
+              style="width: 30vw"
+            />
           </div>
         </div>
       </div>
@@ -65,145 +220,187 @@
     <section class="get-to-know">
       <div class="get-to-know-content">
         <div class="get-to-know-text">
-          <h1 class="h1-text get-to-know-h1-text">GeET TO KNOW MORE ABOUT SPACE</h1>
+          <h1 class="h1-text get-to-know-h1-text">
+            GeET TO KNOW MORE ABOUT SPACE
+          </h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum rem
             non tempore nisi veritatis illo asperiores, doloribus aliquid.
             Voluptates vero maiores eius eaque dignissimos aliquam, veritatis
             voluptate quo sequi rerum
-            
           </p>
           <button class="button-style get-to-know-btn">Learn More</button>
         </div>
         <div class="get-to-know-img">
-            <img src="./home-page-images/about.png">
+          <img src="./home-page-images/about.png" />
         </div>
       </div>
     </section>
     <!-- end  -->
 
-
     <!-- solar-planets section  -->
     <section class="solar-planets">
-        <div class="solar-text">
-            <h1 class="h1-text solar-h1-text">SOLAR PLANETS SYSTEM</h1>
-        </div>
+      <div class="solar-text">
+        <h1 class="h1-text solar-h1-text">SOLAR PLANETS SYSTEM</h1>
+      </div>
 
-        <div class="solar-planet-container">
-            <div class="solar-planets-cards">
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/mercury.png" alt="">
-                    </div>
-                    <h2>MERCURY</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/venus.png" alt="">
-                    </div>
-                    <h2>VENUS</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/earth.png" alt="">
-                    </div>
-                    <h2>EARTH</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/mars.png" alt="">
-                    </div>
-                    <h2>MARS</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/jupiter.png" alt="">
-                    </div>
-                    <h2>JUPITER</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/saturn.png" alt="">
-                    </div>
-                    <h2>SATURN</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/uranus.png" alt="">
-                    </div>
-                    <h2>URANUS</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
-                <div class="solar-planet-member">
-                    <div class="planet-img">
-                        <img src="./planets/neptune.png" alt="">
-                    </div>
-                    <h2>NEPTUNE</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.</P>
-                    <button class="button-style planet-btn">Know More</button>
-                </div>
+      <div class="solar-planet-container">
+        <div class="solar-planets-cards">
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/mercury.png" alt="" />
             </div>
+            <h2>MERCURY</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/venus.png" alt="" />
+            </div>
+            <h2>VENUS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/earth.png" alt="" />
+            </div>
+            <h2>EARTH</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/mars.png" alt="" />
+            </div>
+            <h2>MARS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/jupiter.png" alt="" />
+            </div>
+            <h2>JUPITER</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/saturn.png" alt="" />
+            </div>
+            <h2>SATURN</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/uranus.png" alt="" />
+            </div>
+            <h2>URANUS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
+          <div class="solar-planet-member">
+            <div class="planet-img">
+              <img src="./planets/neptune.png" alt="" />
+            </div>
+            <h2>NEPTUNE</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              obcaecati.
+            </p>
+            <button class="button-style planet-btn">Know More</button>
+          </div>
         </div>
+      </div>
     </section>
     <!-- end  -->
-
 
     <!-- features section  -->
     <section class="features">
-        <div class="feature-text">
-            <h1 class="h1-text">FEATURES WE PROVIDE</h1>
+      <div class="feature-text">
+        <h1 class="h1-text">FEATURES WE PROVIDE</h1>
+      </div>
+      <section id="explore" class="features">
+        <div class="feature">
+          <h2>Interactive Star Maps</h2>
+          <p>
+            Explore detailed and interactive maps of our galaxy, solar system,
+            and beyond.
+          </p>
         </div>
-        <section id="explore" class="features">
-            <div class="feature">
-                <h2>Interactive Star Maps</h2>
-                <p>Explore detailed and interactive maps of our galaxy, solar system, and beyond.</p>
-            </div>
-            <div class="feature" id="news">
-                <h2>Mission Highlights and News</h2>
-                <p>Stay informed with the latest news on space missions, scientific discoveries, and breakthroughs.</p>
-            </div>
-            <div class="feature">
-                <h2>Educational Resources</h2>
-                <p>Access a rich library of articles, videos, and tutorials designed for learners of all ages.</p>
-            </div>
-            <div class="feature">
-                <h2>Virtual Tours and Simulations</h2>
-                <p>Embark on virtual tours of iconic space missions and simulations of space phenomena.</p>
-            </div>
-            <div class="feature" id="multimedia">
-                <h2>Community Engagement</h2>
-                <p>Join a vibrant community of space enthusiasts, scientists, and explorers.</p>
-            </div>
-        </section>
+        <div class="feature" id="news">
+          <h2>Mission Highlights and News</h2>
+          <p>
+            Stay informed with the latest news on space missions, scientific
+            discoveries, and breakthroughs.
+          </p>
+        </div>
+        <div class="feature">
+          <h2>Educational Resources</h2>
+          <p>
+            Access a rich library of articles, videos, and tutorials designed
+            for learners of all ages.
+          </p>
+        </div>
+        <div class="feature">
+          <h2>Virtual Tours and Simulations</h2>
+          <p>
+            Embark on virtual tours of iconic space missions and simulations of
+            space phenomena.
+          </p>
+        </div>
+        <div class="feature" id="multimedia">
+          <h2>Community Engagement</h2>
+          <p>
+            Join a vibrant community of space enthusiasts, scientists, and
+            explorers.
+          </p>
+        </div>
+      </section>
     </section>
     <!-- end  -->
 
-    <hr style="color: #fff;">
-    
+    <hr style="color: #fff" />
+
     <!-- footer  -->
     <footer>
-        <div class="about">
-            <h4>Connect With Us</h4>
-            <p>We are a team of three students, whose names are Vinayak Dhar, Krish Sharma, and Pratham and are studying in Chitkara University. <br>Our project name is QuantumLeap made using HTML and CSS. <br>We are from Group - 25. </p>
-            <p>&#169; 2024-2024 LOGO INDIA</p>
-        </div>
+      <div class="about">
+        <h4>Connect With Us</h4>
+        <p>
+          We are a team of three students, whose names are Vinayak Dhar, Krish
+          Sharma, and Pratham and are studying in Chitkara University. <br />Our
+          project name is QuantumLeap made using HTML and CSS. <br />We are from
+          Group - 25.
+        </p>
+        <p>&#169; 2024-2024 LOGO INDIA</p>
+      </div>
     </footer>
     <!-- end  -->
 
-
-    
+    <script src="script.js"></script>
   </body>
 </html>

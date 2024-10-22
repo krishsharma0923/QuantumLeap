@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style4.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -25,8 +25,8 @@
         <ul class="links">
           <span class="close-btn material-symbols-outlined"> close </span>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./blogs&News.html">Blog & News</a></li>
-          <li class="dropdown active-btn">
+          <li class="active-btn"><a href="./blogs&News.html">Blog & News</a></li>
+          <li class="dropdown">
             <a href="#" class="pages">Pages</a>
             <ul class="dropdown-content">
               <li><a href="mission.html">Mission</a></li>
@@ -191,66 +191,119 @@
     <!-- end  -->
 
     <section class="sub-header">
-      <h1>OUR TEAM</h1>
+      <h1>BLOGS & NEWS</h1>
     </section>
 
-    <!-- our team section  -->
-    <section class="our-team">
-      <div class="team-members">
-        <div class="member-card">
-          <img
-            src="./our-team-images/b188c6801ad1d71d3c962c6e4aa2d0cf.jpg"
-            alt=""
-          />
-          <h2>Krish Sharma</h2>
-          <h5><i>abcd123@gmail.com</i></h5>
-          <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="member-card">
-          <img
-            src="./our-team-images/b188c6801ad1d71d3c962c6e4aa2d0cf.jpg"
-            alt=""
-          />
-          <h2>Pratham</h2>
-          <h5><i>efgh456@gmail.com</i></h5>
-          <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="member-card">
-          <img
-            src="./our-team-images/b188c6801ad1d71d3c962c6e4aa2d0cf.jpg"
-            alt=""
-          />
-          <h2>Vinayak Dhar</h2>
-          <h5><i>ijkl789@gmail.com</i></h5>
-          <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
+
+    <!-- search bar  -->
+    <section class="container">
+      <div class="search-bar-heading">
+        <h2>Trendy Blogs & News</h2>
       </div>
-      <div class="content">
-        <h1>Meet Our Team</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis
-          illum atque non! Culpa natus laudantium minus iure atque dolor quam
-          aperiam exercitationem error quis esse cupiditate, unde recusandae
-          libero?
-        </p>
-        <button class="contact-btn">Contact</button>
+      <div class="search-bar-content">
+        <form action="">
+          <input class="txt" type="text" name="text" id="" placeholder="What are you looking for?">
+          <input class="btn" type="button" value="Search">
+        </form>
       </div>
     </section>
+    <!-- end  -->
+
+    <!-- blog and news section  -->
+    <section class="blog-news-container">
+      <div class="cards-container flex">
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-01.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">HOW MANY GALAXIES ARE IN...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-02.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">CLOUDY WEATHER ON TITAN I...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-03.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">ROSETTA ARRIVES AT COME...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-04.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">LOREM IPSUM DOLOR SIT AM...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-05.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">Neowise Telescope Insigh...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./blogs&News-images/blog-06.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">Space Odyssey Updates Bu...</h3>
+            <h6 class="news-source" id="news-source">29 Dec, 2024</h6>
+            <p class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo, tempore aliquid ut voluptates unde impedit dolore doloribus debitis reiciendis.
+            </p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recent posts  -->
+    <!-- <section class="recent-posts-container">
+      <h2 style="color: #fff; text-align: center;">RECENT POSTS</h2>
+
+      <div class="recent-posts-card-container">
+
+      </div>
+    </section> -->
+
+
+
+    <!-- end -->
 
     <hr style="color: #fff" />
 
@@ -266,6 +319,8 @@
         <p>&#169; 2024-2024 LOGO INDIA</p>
       </div>
     </footer>
+
+
 
 
     <script src="./script.js"></script>
