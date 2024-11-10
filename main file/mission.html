@@ -6,34 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style3.css">
     <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+     />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <section id="front">
-    <div class="navbar">
+<nav class="navbar">
+    <span class="menu-btn material-symbols-outlined"> menu </span>
+    <a href="#" class="logo" style="text-decoration: none"
+      ><h2>QuantumLeap</h2></a
+    >
+    <ul class="links">
+      <span class="close-btn material-symbols-outlined"> close </span>
+      <li class="active-btn"><a href="./index.html">Home</a></li>
+      <li><a href="./blogs&News.html">Blog & News</a></li>
+      <li class="dropdown">
+        <a href="#" class="pages">Pages</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="./ourTeams.html">Our Team</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
 
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="./missions/hd-video.mp4" type="video/mp4">
-        </video>
-        <nav>
-            <a href="logo" id="logo">QuantumLeap</a>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./blogs&News.html">Blog & News</a></li>
-                <li><a href="./ourTeams.html">Our Team</a></li>
-                <li><a href="#">Sign in</a></li>
-            </ul>
-        </nav>
+  <section class="sub-header">
+    <h1>Missions</h1>
+    <p>Exploring the secrets of the universe for the benefit of all. NASA investigates the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. </p>
+  </section>
 
-        <div class="content">
-            <h1>Missions</h1>
-            <p>Exploring the secrets of the universe for the benefit of all. NASA investigates the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery. </p>
-        </div>
-    </div>
-</section>
 
 
 <div class="card-container">
@@ -120,22 +128,19 @@
 </div>
 
 
-<footer>
-    <div class="follow">
-        <b>Follow QuantumLeap</b>
-        <br><br>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </div>
+<hr style="color: #fff" />
 
-    <div class="footer-content">
-        licence reserved copyright @2024 
-        
-        
-    </div>
-    </div>
-        
+<footer>
+  <div class="about">
+    <h4>Connect With Us</h4>
+    <p>
+      We are a team of three students, whose names are Vinayak Dhar, Krish
+      Sharma, and Pratham and are studying in Chitkara University. <br />Our
+      project name is QuantumLeap made using HTML and CSS. <br />We are from
+      Group - 25.
+    </p>
+    <p>&#169; 2024-2024 LOGO INDIA</p>
+  </div>
 </footer>
 </body>
 </html>
