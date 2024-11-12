@@ -1,0 +1,233 @@
+/* home landing page  */
+.home-landing .landing .main-content {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+    margin: 0 6% ;
+    position: absolute;
+    top: 12%;
+}
+.home-landing {
+    position: relative;
+}
+.home-landing .landing img{
+    width: 100%;
+    height: auto;
+}
+.home-landing .landing-text {
+    color: #fff;
+}
+.home-landing .landing-text h1 {
+    font-weight: 800;
+    padding: 3% 0; 
+    font-size: 2.2rem;
+}
+.home-landing .landing-text p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.home-landing .landing .main-content .astro-img {
+    /* height: 55vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-landing .landing .main-content .astro-img .astro {
+    animation: bounce 3s infinite alternate;
+}
+@keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px);
+    }
+}
+.button-style {
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 14px 25px;
+    margin: 2% 0;
+    transition: 500ms;
+    backdrop-filter: blur(10px);
+}
+.button-style:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: black;
+}
+
+
+/* home landing page media query */
+@media (max-width: 752px) {
+    .home-landing .landing .main-content .astro-img {
+        display: none;
+    }
+    .home-landing .landing .main-content {
+        display: block;
+        text-align: center;
+    }
+    .home-landing .landing .main-content .landing-text h1 {
+        font-size: 1.7rem;
+    }
+    .home-landing .landing .main-content .landing-text p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 575px) {
+    .home-landing .landing .main-content .landing-text p {
+        display: none;
+    }
+    .home-landing .landing .main-content {
+        margin-top: -1.5%;
+    }
+} 
+/* end  */
+
+
+
+/* get to know section  */
+.get-to-know .get-to-know-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 50px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 100px 30px;
+    padding: 40px;
+}
+.get-to-know .get-to-know-content .get-to-know-text {
+    color: #fff;
+}
+.h1-text {
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 800;
+    padding: 5% 0;
+}
+.get-to-know .get-to-know-content .get-to-know-text p {
+    font-size: 1.5rem;
+    padding: 5% 0;
+    margin-bottom: 5%;
+}
+.get-to-know .get-to-know-content .get-to-know-img img {
+    width: 40vw;
+}
+
+/* get know more media query */
+@media (max-width: 1000px) {
+    .get-to-know .get-to-know-content {
+        flex-direction: column;
+        /* justify-content: center; */
+        text-align: center;
+        row-gap: 50px;
+    }
+    .get-to-know .get-to-know-content .get-to-know-text .get-to-know-btn {
+        margin-bottom: 60px;
+    }
+    .get-to-know .get-to-know-content .get-to-know-img img{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .h1-text {
+        font-size: 2rem;
+    }
+    .get-to-know .get-to-know-content .get-to-know-text p {
+        font-size: 1.2rem;
+    }
+}
+/* end  */
+
+
+
+
+/* solar planets section  */
+.solar-text {
+    text-align: center;
+    margin: 1rem;
+}
+.solar-planet-container {
+    position: relative;
+}
+.solar-planet-container .solar-planets-cards {
+    color: #fff;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.solar-planet-container .solar-planets-cards .solar-planet-member {
+    width: 300px;
+    padding: 2rem 1.5rem 2rem;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 2;
+    margin: 2rem 0.5rem;
+}
+
+.solar-planet-member .planet-img img {
+    width: 180px;
+    margin: -4rem auto 0 auto;
+}
+
+.solar-planet-container .solar-planets-cards .solar-planet-member h2  {
+    margin: 1rem;
+}
+.solar-planet-container .solar-planets-cards .solar-planet-member p {
+    margin: 1rem;
+}
+/* end  */
+
+/* features section  */
+.features .feature-text {
+    text-align: center;
+}
+
+section.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+
+section.features .feature {
+    background-color: #04071d;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    
+}
+section.features .feature:hover{
+    cursor: pointer;
+    background-color:rgb(5, 21, 36);
+    transform: scale(1.05); 
+    box-shadow: 0 0;
+}
+section.features .feature h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+section.features .feature p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+/* end  */
