@@ -10,6 +10,9 @@ export const Navbar = () => {
 
   return (
     <header>
+
+
+      
       <nav className="navbar">
         <span className="menu-btn material-symbols-outlined" onClick={toggleMenu}>
           menu

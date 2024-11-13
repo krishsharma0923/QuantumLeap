@@ -6,12 +6,12 @@ import BlogsCards from './BlogsCards';
 const BlogsNews = () => {
   return (
     <div>
-      {/* Sub-header section */}
+      
       <section className="sub-header">
         <h1>BLOGS & NEWS</h1>
       </section>
 
-      {/* Search bar section */}
+      
       <section className="container">
         <div className="search-bar-heading">
           <h2>Trendy Blogs & News</h2>
@@ -24,10 +24,8 @@ const BlogsNews = () => {
         </div>
       </section>
 
-      {/* Image slider section */}
       <Slider />
 
-      {/* Blog and news section */}
       <BlogsCards />
     </div>
   );

@@ -1,99 +1,29 @@
 import React from 'react';
 import './HomeLanding.css';
-
-
-const PlanetCard = ({ imgSrc, name, description }) => {
-  return (
-    <div className="solar-planet-member">
-      <div className="planet-img">
-        <img src={imgSrc} alt={name} />
-      </div>
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <button className="button-style planet-btn">Know More</button>
-    </div>
-  );
-};
-
-
-const FeatureCard = ({ title, description }) => {
-  return (
-    <div className="feature">
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  );
-};
-
+import PlanetCard from './PlanetCard';
+import FeatureCard from './FeatureCard';
 
 
 export const HomeLanding = () => {
 
   const planets = [
-    {
-      imgSrc: './planets/mercury.png',
-      name: 'MERCURY',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/venus.png',
-      name: 'VENUS',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/earth.png',
-      name: 'EARTH',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/mars.png',
-      name: 'MARS',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/jupiter.png',
-      name: 'JUPITER',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/saturn.png',
-      name: 'SATURN',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/uranus.png',
-      name: 'URANUS',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
-    {
-      imgSrc: './planets/neptune.png',
-      name: 'NEPTUNE',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.',
-    },
+    { imgSrc: './planets/mercury.png', name: 'MERCURY', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/venus.png', name: 'VENUS', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/earth.png', name: 'EARTH', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/mars.png', name: 'MARS', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/jupiter.png', name: 'JUPITER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/saturn.png', name: 'SATURN', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/uranus.png', name: 'URANUS', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
+    { imgSrc: './planets/neptune.png', name: 'NEPTUNE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, obcaecati.' },
   ];
 
 
   const features = [
-    {
-      title: 'Interactive Star Maps',
-      description: 'Explore detailed and interactive maps of our galaxy, solar system, and beyond.',
-    },
-    {
-      title: 'Mission Highlights and News',
-      description: 'Stay informed with the latest news on space missions, scientific discoveries, and breakthroughs.',
-    },
-    {
-      title: 'Educational Resources',
-      description: 'Access a rich library of articles, videos, and tutorials designed for learners of all ages.',
-    },
-    {
-      title: 'Virtual Tours and Simulations',
-      description: 'Embark on virtual tours of iconic space missions and simulations of space phenomena.',
-    },
-    {
-      title: 'Community Engagement',
-      description: 'Join a vibrant community of space enthusiasts, scientists, and explorers.',
-    },
+    { title: 'Interactive Star Maps', description: 'Explore detailed and interactive maps of our galaxy, solar system, and beyond.' },
+    { title: 'Mission Highlights and News', description: 'Stay informed with the latest news on space missions, scientific discoveries, and breakthroughs.' },
+    { title: 'Educational Resources', description: 'Access a rich library of articles, videos, and tutorials designed for learners of all ages.' },
+    { title: 'Virtual Tours and Simulations', description: 'Embark on virtual tours of iconic space missions and simulations of space phenomena.' },
+    { title: 'Community Engagement', description: 'Join a vibrant community of space enthusiasts, scientists, and explorers.' },
   ];
 
 
@@ -150,22 +80,17 @@ export const HomeLanding = () => {
 
 
     <section className="solar-planets">
-      <div className="solar-text">
-        <h1 className="h1-text solar-h1-text">SOLAR PLANETS SYSTEM</h1>
-      </div>
-      <div className="solar-planet-container">
-        <div className="solar-planets-cards">
-          {planets.map((planet, index) => (
-            <PlanetCard
-              key={index}
-              imgSrc={planet.imgSrc}
-              name={planet.name}
-              description={planet.description}
-            />
-          ))}
+        <div className="solar-text">
+          <h1 className="h1-text solar-h1-text">SOLAR PLANETS SYSTEM</h1>
         </div>
-      </div>
-    </section>
+        <div className="solar-planet-container">
+          <div className="solar-planets-cards">
+            {planets.map((planet, index) => (
+              <PlanetCard key={index} imgSrc={planet.imgSrc} name={planet.name} description={planet.description} />
+            ))}
+          </div>
+        </div>
+      </section>
 
 
 

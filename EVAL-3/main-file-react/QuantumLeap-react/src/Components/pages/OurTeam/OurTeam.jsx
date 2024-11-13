@@ -21,12 +21,10 @@ const teamMembers = [
 
 const OurTeam = () => (
   <div>
-    {/* Sub-header section */}
     <section className="sub-header">
       <h1>OUR TEAM</h1>
     </section>
 
-    {/* Our team section */}
     <section className="our-team">
       <div className="team-members">
         {teamMembers.map((member, index) => (

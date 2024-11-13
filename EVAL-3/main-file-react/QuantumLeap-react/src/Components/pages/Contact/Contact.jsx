@@ -1,20 +1,17 @@
 import React from 'react';
-import './Contact.css'; // Ensure this links to your CSS file correctly
+import './Contact.css'; 
 
 const Contact = () => {
   return (
     <div>
-      {/* Sub-header Section */}
       <section className="sub-header">
         <h1>CONTACT</h1>
       </section>
 
-      {/* Contact Section */}
       <section className="contact">
         <div className="container">
           <div className="contact-wrapper">
             
-            {/* Contact Form */}
             <div className="contact-form">
               <h3>Send Us A Message</h3>
               <form>
@@ -31,7 +28,6 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Contact Information */}
             <div className="contact-info">
               <h3>Contact Information</h3>
               <p><i className="fas fa-phone"></i>+91 123 456 789</p>
